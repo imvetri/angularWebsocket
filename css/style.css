@@ -1,0 +1,9 @@
+.container{
+	height: 410px;
+	width: 410px;
+}
+.node {
+	background-color: RED;
+	margin: 1px;
+	display: inline-block;
+}

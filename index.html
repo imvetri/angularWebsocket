@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Game Board</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="container"></div>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/graph.js"></script>
+		<script src="scripts/gameboard.js"></script>
+		<script>
+			var i,j;
+			var g = new Graph();
+			for(i = 1; i<=9; i++){
+				for(j = 1; j<=9; j++) {
+					g.addVertex({id:parseInt(i + '' + j,10)});
+				}
+			}	
+			var gameboard = new GameBoard();
+			gameboard.render(g,9); //Render a gameboard with graph g into 6 x 6 squares
+		</script>
+	</body>
+</html>
